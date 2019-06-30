@@ -31,3 +31,25 @@ npm install
 ganache-cli -p 8545 -m "spirit supply whale amount human item harsh scare congress discover talent hamster" --gasLimit 300000000 --gasPrice 20000000000 -a 20
 
 ```
+#### Open a separate terminal window and change the directory to eth-contracts
+Change to the folder ```eth-contracts``` 
+
+
+#### Compile the Project 
+```
+truffle compile
+```
+
+#### Migrate smart contracts to the locally running blockchain:` 
+```
+truffle migrate
+```
+
+#### Test smart contracts:
+```
+truffle test 
+```
+![Test.js](images/testing_capture.png)
+
+All tests should pass.
+
