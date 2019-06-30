@@ -8,7 +8,7 @@ import "./verifier.sol";
 
 
 // TODO define another contract named SolnSquareVerifier that inherits from your ERC721Mintable class
-contract SolnSquareVerifier is CustomERC721Token {
+contract SolnSquareVerifier is ERC721Mintable {
     Verifier verifier;
 
     //constructor(address _verifierAddress) ERC721Mintable() public{
@@ -37,8 +37,9 @@ contract SolnSquareVerifier is CustomERC721Token {
     event solutionAdded(address solutionAddress);
 
 // TODO Create a function to add the solutions to the array and emit the event
-    function addSolution(address _solutionAddress, uint256 _id, uint[2] memory a, uint[2][2] memory b,uint[2] memory c,uint[2] memory input) public {
-		bytes32 key = keccak256(abi.encodePacked(a,b,c,input));
+    function addSolution(address _solutionAddress, uint256 _id,bytes32 key ) public {
+		//bytes32 key = keccak256(abi.encodePacked(a,b,c,input));
+        //bytes32 key = keccak256(abi.encodePacked(a, a_p, b, b_p, c, c_p, h, k,input));
 		require(isSolutionUnique(key), "Solution already exsits.");
         Solution memory sol = Solution({index: _id, solutionAddress: _solutionAddress});
         solutionsSubmitted[key] = sol;
@@ -58,9 +59,10 @@ contract SolnSquareVerifier is CustomERC721Token {
 		return isUnique;
     }
 
-    function mintNewNFT(address _to, uint256 _tokenId, uint[2] memory a, uint[2][2] memory b, uint[2] memory c, uint[2] memory input,uint[2] memory a_p,uint[2] memory b_p,uint[2] memory c_p,uint[2] memory h,uint[2] memory k) public{
-		require(verifier.verifyTx(a,a_p,b,b_p,c,c_p,h,k,input), "Incorrect solution");
-		addSolution(_to, _tokenId,a,b,c,input);
+    function mintNewNFT(address _to, uint256 _tokenId, uint[2] memory a,uint[2] memory a_p, uint[2][2] memory b,uint[2] memory b_p, uint[2] memory c,uint[2] memory c_p,uint[2] memory h,uint[2] memory k, uint[2] memory input) public{
+		bytes32 key = keccak256(abi.encodePacked(a, a_p, b, b_p, c, c_p, h, k,input));
+        require(verifier.verifyTx(a,a_p,b,b_p,c,c_p,h,k,input), "Incorrect solution");
+		addSolution(_to, _tokenId,key);
 		super.mint(_to, _tokenId);
 	}
 

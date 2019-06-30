@@ -3,7 +3,7 @@
 // var SolnSquareVerifier = artifacts.require("./SolnSquareVerifier.sol");
 // var Verifier = artifacts.require("./verifier.sol");
 
-var ERC721Mintable = artifacts.require("CustomERC721token");
+var ERC721Mintable = artifacts.require("ERC721Mintable");
 var SolnSquareVerifier = artifacts.require("SolnSquareVerifier");
 var Verifier = artifacts.require("Verifier");
 
