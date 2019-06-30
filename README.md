@@ -65,3 +65,7 @@ truffle migrate --reset --rinkeby
 ![Infura](images/Infura2.png)
 ![Infura](images/Infura3.png)
 
+The deployed contract can be found in:
+
+https://rinkeby.etherscan.io/address/0xbc74a9dd60c7F33d4c80278C1824168636bF3930
+
