@@ -49,7 +49,19 @@ truffle migrate
 ```
 truffle test 
 ```
-![Test.js](images/testing_capture.png)
+![Test](images/testing_capture.png)
 
 All tests should pass.
+
+
+### Deployment to Rinkeby
+
+In order to deploy to Rinkeby test network, the `truffle-config.js` file has to be appropriately modifier by providing Infura key.
+After that run the following command on the terminal
+```
+truffle migrate --reset --rinkeby
+```
+![Infura](images/Infura1.png)
+![Infura](images/Infura2.png)
+![Infura](images/Infura3.png)
 
