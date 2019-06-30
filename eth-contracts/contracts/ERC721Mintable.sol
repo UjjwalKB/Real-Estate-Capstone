@@ -561,8 +561,8 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 //      -calls the superclass mint and setTokenURI functions
 
 contract ERC721Mintable is ERC721Metadata{
-    string private _name = "Real Estate Token for Udacity";
-    string private _symbol = "RET";
+    string private _name = "Real Estate Capstone";
+    string private _symbol = "REC";
     string private _baseTokenURI = "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/";
 
     constructor() ERC721Metadata(_name,_symbol,_baseTokenURI) public {

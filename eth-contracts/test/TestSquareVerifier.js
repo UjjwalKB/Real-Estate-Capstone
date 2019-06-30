@@ -19,10 +19,8 @@ var proofJSON = {
 
 
 contract('Verifier', accounts => {
-	//read first account
-    const account = accounts[0];
-    const account2 = accounts[1];
-    //read from proof json
+    //const account = accounts[0];
+    //const account2 = accounts[1];
     const a = proofJSON["proof"]["A"];
     const b = proofJSON["proof"]["B"];
     const c = proofJSON["proof"]["C"];
@@ -37,18 +35,17 @@ contract('Verifier', accounts => {
 
     describe('Testing Verifier', function () {
         before(async function () {
-            this.contract = await Verifier.new({from: account});
+            this.contract = await Verifier.new({from: accounts[0]});
         });
 
         it('Test verification with correct proof', async function () {
-            let isVerified = await this.contract.verifyTx.call(a,a_p,b,b_p,c,c_p,h,k,correctProofInput, {from: account});
+            let isVerified = await this.contract.verifyTx.call(a,a_p,b,b_p,c,c_p,h,k,correctProofInput, {from: accounts[0]});
             console.log(isVerified);
             assert.equal(isVerified, true, "Incorrect proof");
         });
 
-        // Test verification with incorrect proof
         it('Test verification with incorrect proof', async function () {
-            let isVerified = await this.contract.verifyTx.call(a,a_p,b,b_p,c,c_p,h,k,incorrectProofInput, {from: account});
+            let isVerified = await this.contract.verifyTx.call(a,a_p,b,b_p,c,c_p,h,k,incorrectProofInput, {from: accounts[0]});
             assert.equal(isVerified, false, "Correct proof");
         });
     });

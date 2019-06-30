@@ -40,15 +40,15 @@ contract('SolnSquareVerifier', accounts => {
             const verifier = await Verifier.new({from: account});
             this.contract = await SolnSquareVerifier.new(verifier.address, {from: account});
         });
-        // Test if an ERC721 token can be minted for contract and a new solution can be added for contract - SolnSquareVerifier
-        it('Test if an ERC721 token can be minted for contract a new solution can be added for contract - SolnSquareVerifier', async function () {
+        
+        it('Test if an ERC721 token can be minted for contract - SolnSquareVerifier', async function () {
             let canBeMinted = await this.contract.mintNewNFT(account2, 2,a,a_p,b,b_p,c,c_p,h,k,correctProofInput, {from: account});
             let owner = await this.contract.ownerOf(2);
             assert.equal(account2, owner, "Token was not minted.");
         });
-        // Test if an already existing solution can not be added for contract - SolnSquareVerifier
+        
+
         it('Test if an already existing solution can not be added for contract - SolnSquareVerifier', async function () {
-            //calling with the same proof
             let isAlreadyAdded = false;
             try{
                 await this.contract.addSolution(account2, 2,a,a_p,b,b_p,c,c_p,h,k,correctProofInput);
