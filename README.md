@@ -68,4 +68,6 @@ truffle migrate --network rinkeby --reset
 The deployed contract can be found in:
 
 Solution Square verifier: https://rinkeby.etherscan.io/address/0xFc9d788F8ABE76dccbf4D2797fdF119D9ECf2663
+Verifier: https://rinkeby.etherscan.io/address/0xA0530b04CbF5f1884C6436EFb70A3AF978940066
+Migrations: https://rinkeby.etherscan.io/address/0x9b714D56e3b1d6488085289fc957813827efF114
 
