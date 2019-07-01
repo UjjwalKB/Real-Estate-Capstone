@@ -67,9 +67,12 @@ truffle migrate --network rinkeby --reset
 
 The deployed contract can be found in:
 
-Solution Square verifier: https://rinkeby.etherscan.io/address/0xFc9d788F8ABE76dccbf4D2797fdF119D9ECf2663
+Solution Square verifier: https://rinkeby.etherscan.io/address/0xFc9d788F8ABE76dccbf4D2797fdF119D9ECf2663 
+
 Verifier: https://rinkeby.etherscan.io/address/0xA0530b04CbF5f1884C6436EFb70A3AF978940066
+
 Migrations: https://rinkeby.etherscan.io/address/0x9b714D56e3b1d6488085289fc957813827efF114
+
 
 
 ### Mint 10 Tokens
@@ -83,7 +86,7 @@ Migrations: https://rinkeby.etherscan.io/address/0x9b714D56e3b1d6488085289fc9578
 7) Minted Token. Transaction: 0xdeee0beed3c2eb7c76578aa962262dcad9bc2c1405ce5a451f2e93fe71a6df36
 8) Minted Token. Transaction: 0x47740dc5a6738cbf4e17685b915bb116ae0b1a01fc47c629b21d8547abebc950
 9) Minted Token. Transaction: 0xaf66303a16adfc3904e564d2e4d4b083a09cfca97fdc4e27863b1137a15e0af5 
-10)Minted Token. Transaction: 0xc5efabca3fb2943c15834b16c4b57480c517709565e8c2b428faa29610557dbb
+10) Minted Token. Transaction: 0xc5efabca3fb2943c15834b16c4b57480c517709565e8c2b428faa29610557dbb
 
 ### Open Sea Token listing and Transaction
 Visit https://rinkeby.opensea.io/category/ujjwalblockchaincapstone
