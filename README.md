@@ -82,7 +82,7 @@ Migrations: https://rinkeby.etherscan.io/address/0x9b714D56e3b1d6488085289fc9578
 6) Minted Token. Transaction: 0x5e5503b736051ea5ce1ad13de0d0305e29adf7804745d9c3db68194c3cf11d6e
 7) Minted Token. Transaction: 0xdeee0beed3c2eb7c76578aa962262dcad9bc2c1405ce5a451f2e93fe71a6df36
 8) Minted Token. Transaction: 0x47740dc5a6738cbf4e17685b915bb116ae0b1a01fc47c629b21d8547abebc950
-9) Minted Token. Transaction: 0xaf66303a16adfc3904e564d2e4d4b083a09cfca97fdc4e27863b1137a15e0af5
+9) Minted Token. Transaction: 0xaf66303a16adfc3904e564d2e4d4b083a09cfca97fdc4e27863b1137a15e0af5 
 10)Minted Token. Transaction: 0xc5efabca3fb2943c15834b16c4b57480c517709565e8c2b428faa29610557dbb
 
 ### Open Sea Token listing and Transaction
@@ -92,10 +92,22 @@ Click on Item in this collection
 ![OpenSea](images/OpenSea2.png)
 
 From the Categories list, select "Ujjwal Blockchain Capstone"
-You will be able to sea 10 listing: https://rinkeby.opensea.io/accounts/0x27d8d15cbc94527cadf5ec14b69519ae23288b95/ujjwal-blockchain-capstone
+You will be able to see 10 listing: https://rinkeby.opensea.io/accounts/0x27d8d15cbc94527cadf5ec14b69519ae23288b95/ujjwal-blockchain-capstone
 
 Select Any 5 and list them to sell.
 ![OpenSea](images/OpenSea3.png)
 ![OpenSea](images/OpenSea4.png)
 Birth of Token: https://rinkeby.etherscan.io/tx/0xc5efabca3fb2943c15834b16c4b57480c517709565e8c2b428faa29610557dbb
 Sale of Token: https://rinkeby.etherscan.io/tx/0xb28cd4bd2e4f0465a64f187c2e43f8830fef2ac0d085bcd666eb3404be83fa04
+
+
+## Built With
+
+* [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
+* [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
+* [ZoKrates](https://github.com/Zokrates/ZoKrates) - Implement zkSnarks using ZoKrates, a toolbox for zkSNARKs on Ethereum.
+* [Docker](https://docs.docker.com/install/) - Docker is the recommended way to get started with Zokrates. Docker is a tool designed to make it easier to create, deploy, and run applications by using containers.
+* [OpenSea](https://docs.opensea.io/docs) - OpenSea is a decentralized marketplace that is used for selling for crypto assets
+* [Infura](https://infura.io/) - Scalable Blockchain Infrastructure
+* [Metamask](https://metamask.io/) - MetaMask is a bridge that allows to visit the distributed web in browser.
+
