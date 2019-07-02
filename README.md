@@ -20,7 +20,10 @@ Please make sure you've already installed
 Please follow the following steps to get the environment up and running.
 
 #### Create a local working directory and then  clone github repository:
+
 Clone the github repository
+Contract ABI is provided in the ABI folder
+
 Install the required node packages as listed in 'package.json'
 ```
 npm install
